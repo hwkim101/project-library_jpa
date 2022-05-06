@@ -33,7 +33,7 @@ public class BookController {
 	private CategoryRepository categoryRepository;
 	@PostMapping(value="/list")
     public @ResponseBody List<BookEntity> list(BookEntity bookEntity) {
-		log.debug(">>>>>>>>>>>>>>>>");
+		log.debug(">>>>>>>>>>>>>>>>commit test");
 		List<BookEntity> list = new ArrayList();
 		list = bookRepository.findAll(); 
 		list.stream().forEach(book -> System.out.println(book.getBookNm()));
